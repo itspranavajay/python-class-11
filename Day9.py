@@ -12,7 +12,6 @@ for i in range(0,n-1):
     if(numbers[i] > numbers[pos]):        
         pos = i
 
-# removing the largest element of the numbers
 numbers.pop(pos)
 
 
