@@ -3,6 +3,7 @@ import math
 def main():
     print('1. Minutes to hours Calculator')
     print('2. Compute GCD and LCM of 2 integers')
+    print('0. To Exit')
     uc = int(input('Enter your choice : '))
 
     if(uc == 1):
@@ -17,8 +18,11 @@ def main():
         lcm = math.lcm(n1,n2)
         print('GCD = ',hcf)
         print('LCM = ',lcm)
-
+    elif(uc == 0):
+     	return
     else:
         print('Wrong number entered, please try again !!')
+    print('\n\n')
+    main()
 
 main()
