@@ -1,15 +1,12 @@
 
 n = int(input('Enter the number of strings in the list : '))
 
-str = []
 list = []
 
 print('Enter ',n,' strings')
-for i in range(0,n):
-    str.append(input())
-
+str = [input() for _ in range(n)]
 list = str
-for i in range(0,len(str)):
+for i in range(len(str)):
     list[i] = str[i][1:]
 
 print('The new list is : ')
