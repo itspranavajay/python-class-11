@@ -1,10 +1,7 @@
-nums = []
 n = int(input('Enter the number of integers in the numbers : '))
 
 print('Enter ',n,' integers')
-for i in range(0,n):
-    nums.append(int(input()))
-
+nums = [int(input()) for _ in range(n)]
 insert_index = 0
 for i in range(len(nums)):
     if nums[i] != 0:

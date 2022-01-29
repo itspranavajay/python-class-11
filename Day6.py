@@ -5,8 +5,8 @@ def main():
     n1 = 0
 
     for i in s:
-        if(i.isdigit()):
-            s1 = s1 + i
+        if (i.isdigit()):
+            s1 += i
 
     n1 = n + int(s1)
 

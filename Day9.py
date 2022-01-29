@@ -1,14 +1,9 @@
 
 n = int(input('Enter the number of integers in the numbers : '))
-numbers = []
-
 print('Enter ',n,' integers')
-for i in range(0,n):
-    numbers.append(int(input()))
-
-
+numbers = [int(input()) for _ in range(n)]
 pos = 0
-for i in range(0,n-1):
+for i in range(n-1):
     if(numbers[i] > numbers[pos]):        
         pos = i
 
@@ -16,7 +11,7 @@ numbers.pop(pos)
 
 
 high = 0
-for i in range(0,n-2):
+for i in range(n-2):
     if(numbers[i] > numbers[i+1]):        
         high = numbers[i]
 

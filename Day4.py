@@ -13,9 +13,9 @@ def armstrong(n):
     global flag
     n1 = n
     sum = 0
-    while(n1 != 0):
+    while (n1 != 0):
         d = n1 % 10
-        sum = sum + d**3
+        sum += d**3
         n1 = n1 // 10
     if(n == sum):
         flag = True
